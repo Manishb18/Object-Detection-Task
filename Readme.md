@@ -40,3 +40,7 @@ and then run : docker run -p 5000:5000 backend
  **Hurrah! Your app is now running!!**
  
 Below is the video showing how the webapp works.
+
+https://github.com/Manishb18/Object-Detection-Task/assets/81469629/10ffa1bb-3f46-4768-b3cd-12cad6b5f510
+
+

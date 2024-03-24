@@ -10,11 +10,14 @@ Used react as frontend and flask to build the backend of the application.
 
  1. Clone the repository to your local machine:  using  
 git clone https://github.com/Manishb18/Object-Detection-Task.git
-or 
+
+or
+
 Download the zip file 
- 2. open the terminal and navigate to the main folder
+ 3. open the terminal and navigate to the main folder
  
  **Backend Setup**
+ 
  3. After you reach the backend folder. (Assuming that you have docker installed in your system)
 *Run the following docker command*: docker build -t backend .
 and then run : docker run -p 5000:5000 backend
@@ -24,11 +27,16 @@ and then run : docker run -p 5000:5000 backend
  7. Run this command in the terminal : pip install -r requirements.txt
  8. Now run  : python app.py 
  9. And now the backend should be up and running.
+ 
  **Frontend Setup:**
+
+ 
  10. If you are in the backend folder , do  : cd..
  11. Then cd frontend
  12. Now run  : npm install
  13. This will install all the required packages and get the app ready.
  14. Now finally run : npm run dev
+
  **Hurrah! Your app is now running!!**
+ 
 Below is the video showing how the webapp works.

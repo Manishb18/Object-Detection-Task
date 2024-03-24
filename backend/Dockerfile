@@ -1,5 +1,5 @@
-# Use the official Python runtime as a parent image
-FROM python:3.9
+# Use a prebuilt Docker image with PyTorch installed
+FROM pytorch/pytorch:latest
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed dependencies specified in requirements.txt
-RUN pip install --no-cache-dir --default-timeout=500 -r requirements.txt
+# (If you still have a requirements.txt file, uncomment the following line)
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 5000 available to the world outside this container
 EXPOSE 5000

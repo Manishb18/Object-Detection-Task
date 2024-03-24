@@ -28,7 +28,7 @@ function App() {
     formData.append('file', selectedFile);
     try {
       setDetectingObjects(true);
-      const response = await axios.post('https://object-detector-backend.onrender.com/detect', formData, {
+      const response = await axios.post('http://localhost:5000/detect', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

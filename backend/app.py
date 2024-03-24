@@ -11,7 +11,12 @@ app = Flask(__name__)
 CORS(app)
 
 # Load pre-trained Faster R-CNN model
-model = models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
+# Load pre-trained Faster R-CNN model
+model = models.detection.fasterrcnn_resnet50_fpn(pretrained=False)
+model.load_state_dict(torch.hub.load_state_dict_from_url(
+    "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+    progress=True
+))
 model.eval()
 
 # Define the classes for COCO dataset
